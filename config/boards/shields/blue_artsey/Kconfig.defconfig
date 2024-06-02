@@ -1,3 +1,5 @@
+config CONFIG_ZMK_KSCAN_DIRECT_POLLING
+	default y
 
 config ZMK_USB
 	default y
