@@ -1,0 +1,6 @@
+if SHIELD_BLUE_ARTSEY
+
+config ZMK_KEYBOARD_NAME
+	default "blue_artsey"
+
+endif
