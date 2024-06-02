@@ -5,6 +5,7 @@
 
 	default_kscan: kscan{
 		compatible = "zmk,kscan-gpio-direct";
+		label = "KSCAN"
 	
 	input-gpios = 
 		<&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,

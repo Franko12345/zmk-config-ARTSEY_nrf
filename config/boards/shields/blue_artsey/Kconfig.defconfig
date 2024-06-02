@@ -1,3 +1,7 @@
+
+config ZMK_USB
+	default y
+
 if SHIELD_BLUE_ARTSEY
 
 config ZMK_KEYBOARD_NAME
