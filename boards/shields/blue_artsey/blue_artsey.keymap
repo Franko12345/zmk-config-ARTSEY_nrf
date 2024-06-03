@@ -3,6 +3,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+	
+	chosen {
+		zephyr,console = &cdc_acm_uart;
+	};
+	
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -12,5 +17,13 @@
 				&kp E	&kp F	&kp G	&kp H
 			>;
 		};
+	};
+};
+// Allow USB logging
+&usbd {
+	status = "okay";
+	cdc_acm_uart: cdc_acm_uart {
+		compatible = "zephyr,cdc-acm-uart";
+		label = "CDC_ACM_0";
 	};
 };
