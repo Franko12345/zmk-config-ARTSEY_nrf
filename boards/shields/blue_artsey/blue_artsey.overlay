@@ -1,6 +1,8 @@
 /{
 	chosen{
 		zmk,kscan = &default_kscan;
+		zephyr,console = &cdc_acm_uart;
+
 	};
 
 	default_kscan: kscan{
