@@ -1,0 +1,21 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+/ {
+	
+	chosen {
+		zephyr,console = &cdc_acm_uart;
+	};
+	
+	keymap {
+		compatible = "zmk,keymap";
+
+		default_layer {
+			bindings = <
+				&kp A	&out OUT_BLE	&out OUT_USB	&bootloader
+				&kp E	&kp F			&bt BT_CLR	 	&bt BT_SEL 0
+			>;
+		};
+	};
+};
