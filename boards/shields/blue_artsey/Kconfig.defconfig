@@ -2,7 +2,7 @@ config ZMK_USB
 	default y
 
 config ZMK_BLE
-	default n
+	default y
 
 
 if SHIELD_BLUE_ARTSEY
